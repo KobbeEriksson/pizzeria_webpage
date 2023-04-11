@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Page</title>
+</head>
+<body>
+  <h1>Welcome {{ username }}!</h1>
+  <p>This is your user page.</p>
+  <form method="post" action="{{ url_for('logout') }}">
+    <input type="submit" value="Logout">
+</form>
+  <p><a href="{{ url_for('home') }}">Home</a></p>
+</body>
+</html>
+
